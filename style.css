@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.themebtn {
+    position: absolute;
+    top: 1%;
+    right: 0.5%;
+    height: 45px;
+    width: 90px;
+    margin: 4px;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+#logo {
+    position: absolute;
+    top: 1%;
+    left: 0.5%;
+    height: 125px;
+}
+
+#page {
+    position: relative;
+    height: 100vh;
+    width: 60vw;
+    text-align: center;
+    padding: 5px;
+}
+
+#pagehead {
+    display: block;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 90px;
+    margin-bottom: 80px;
+}
+
+.username {
+    height: 3rem;
+    width: 80%;
+    font-size: 18px;
+    border-radius: 25px;
+    margin: 15px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+#fetchbtn {
+    height: 3rem;
+    width: 8rem;
+    background-color: #aeb7df;
+    border: 0;
+    border-radius: 13px;
+}
+
+#userinfo {
+    height: 50vh;
+    font-size: 26px;
+    font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+    line-height: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#pfp {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 2px;
+    border: 3px solid rgb(59, 191, 203);
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 1300px) {
+    #pagehead {
+        margin: 40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #page {
+        width: 100%;
+    }
+
+    #pagehead {
+        margin: 40px;
+    }
+
+    #pfp {
+        height: 200px;
+        width: 200px;
+    }
+}
+@media screen and (max-width: 635px) {
+    .themebtn{
+        top: 90%;
+        color: transparent;
+        width: 45px;
+    }
+
+    #logo{
+        height: 90px;
+        top: 86%;
+    }
+}
+
+@media screen and (max-width: 512px) {   
+    #pagehead {
+        margin: 20px;
+    }
+
+    #userinfo {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 410px) {
+    .themebtn{
+        top: 1%;
+    }
+    #logo{
+        top: 0.4%;
+        height: 70px;
+    }
+}
