@@ -79,11 +79,12 @@ body {
 #pfp {
     height: 300px;
     width: 300px;
+    border: 3px solid rgb(59, 191, 203);
     border-radius: 50%;
     margin-right: 10px;
     margin-top: 20px;
     padding: 2px;
-    border: 3px solid rgb(59, 191, 203);
+    animation: spinloader 1.2s linear 0s 1 normal;
 }
 
 .dark {
@@ -94,6 +95,16 @@ body {
 .light {
     background-color: white;
     color: black;
+}
+
+@keyframes spinloader {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -116,20 +127,21 @@ body {
         width: 200px;
     }
 }
+
 @media screen and (max-width: 635px) {
-    .themebtn{
+    .themebtn {
         top: 90%;
         color: transparent;
         width: 45px;
     }
 
-    #logo{
+    #logo {
         height: 90px;
         top: 86%;
     }
 }
 
-@media screen and (max-width: 512px) {   
+@media screen and (max-width: 512px) {
     #pagehead {
         margin: 20px;
     }
@@ -138,11 +150,13 @@ body {
         font-size: 20px;
     }
 }
+
 @media screen and (max-width: 410px) {
-    .themebtn{
+    .themebtn {
         top: 1%;
     }
-    #logo{
+
+    #logo {
         top: 0.4%;
         height: 70px;
     }
