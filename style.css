@@ -28,6 +28,7 @@ body {
     top: 1%;
     left: 0.5%;
     height: 125px;
+    z-index: 1;
 }
 
 #page {
